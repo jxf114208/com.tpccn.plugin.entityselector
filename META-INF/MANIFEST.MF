@@ -1,0 +1,17 @@
+Bundle-ManifestVersion: 2
+Manifest-Version: 1.0
+Bundle-Name: EntitySelector
+Bundle-SymbolicName: com.tpccn.plugin.entityselector;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.tpccn.plugin.entityselector.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jdt.core;bundle-version="3.8.3",
+ org.eclipse.core.resources;bundle-version="3.8.1",
+ org.eclipse.core.expressions;bundle-version="3.4.401",
+ org.eclipse.jpt.jpa.ui;bundle-version="3.2.2",
+ org.eclipse.jpt.jpa.core;bundle-version="3.2.2",
+ org.eclipse.jpt.jpadiagrameditor.ui;bundle-version="1.0.3",
+ org.eclipse.jpt.common.core;bundle-version="1.2.2"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
