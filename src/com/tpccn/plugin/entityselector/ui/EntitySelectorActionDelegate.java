@@ -210,7 +210,7 @@ public class EntitySelectorActionDelegate implements IObjectActionDelegate {
 			JpaFile jpaFile = (JpaFile) jarJpaFilesIterator.next();
 			IFile file = jpaFile.getFile();
 			String name = file.getName();
-			if (name.contains("tpcframework")) {
+			if (name.startsWith("tpcframework.") || name.startsWith("bap.")) {
 				BinaryPackageFragmentRoot binaryPackageFragmentRoot = (BinaryPackageFragmentRoot) jpaFile.getResourceModel();
 				Iterable<JavaResourcePackageFragment> packageFragments = binaryPackageFragmentRoot.getPackageFragments();
 				Iterator<JavaResourcePackageFragment> iterator2 = packageFragments.iterator();
